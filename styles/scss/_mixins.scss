@@ -1,0 +1,169 @@
+// imports
+@import "variables";
+
+// font styles
+@mixin h1-style {
+    font: {
+        family: 'Oswald', sans-serif;
+        size: 4.56rem;
+        weight: 400;
+    }
+}
+
+@mixin h2-style {
+    font: {
+        family: 'Oswald', sans-serif;
+        size: 2.75rem;
+        weight: 300;
+    }
+}
+
+@mixin h3-style {
+    font: {
+        family: 'Oswald', sans-serif;
+        size: 1.5rem;
+        weight: 400;
+    }
+}
+
+@mixin h4-style {
+    font: {
+        family: 'Oswald', sans-serif;
+        size: 1.75rem;
+        weight: 400;
+    }
+}
+
+@mixin h5-style {
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: 1.5rem;
+        weight: 400;
+    }
+}
+
+@mixin h6-style {
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: 1.25rem;
+        weight: 400;
+    }
+}
+
+@mixin p-style {
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: 1.25rem;
+        weight: 400;
+    }
+}
+
+@mixin link-style {
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: 0.87rem;
+        weight: 400;
+    }
+}
+
+@mixin nav-style {
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: 0.88rem;
+        weight: 600;
+    }
+}
+@mixin sm-text  ($font-style: italtic, $italic: true) {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: $secondary--color;
+    text-transform: uppercase;
+    @if $italic == false {
+        font-style: normal;
+        font-size: 0.75rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        border: 1px solid white;
+        display: inline-block;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+}
+
+@mixin lg-text ($font-size: 73, $size: true) {
+    font-size: 4.56rem;
+    @if $size == false {
+        font-size: 3.88rem;
+    } @else if $size == null {
+        font-size: 4.06rem;
+    }
+}
+
+// flexbox
+@mixin flex {
+    display: flex;
+}
+
+@mixin justify-cnt ($justify-cnt: center, $center: true) {
+    justify-content: center;
+    @if $center == false {
+        justify-content: space-around;
+    } @else if $center == null {
+        justify-content: space-between;
+    }
+}
+
+@mixin text-align ($text-align: center, $align: true) {
+    text-align: center;
+    @if $align == false {
+        text-align: right;
+    } @else if $align == null {
+        text-align: left;
+    }
+}
+
+@mixin flex-dir ($flex-dir: row, $row: true) {
+    flex-direction: row;
+    @if $row == false {
+        flex-direction: column;
+    } @else if $row == null {
+        flex-direction: row-reverse;
+    }
+}
+
+// spacing
+@mixin img-spacing ($img-margin: 1.6rem, $margin: true) {
+    margin-bottom: 1.6rem;
+    @if $margin == false {
+        margin-bottom: 1.9rem;
+    } @else if $margin == null {
+        margin-bottom: 2rem;
+    }
+}
+
+// other 
+@mixin background-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin display-none {
+    display: none;
+}
+
+@mixin display-inline-blk {
+    display: inline-block;
+}
+
+// media queries breakpoint mixins
+$breakpoints: (
+    "mobile": 576px,
+    "tablet": 768px,
+    "laptop": 992px,
+    "large-devices": 1200px,
+);
+

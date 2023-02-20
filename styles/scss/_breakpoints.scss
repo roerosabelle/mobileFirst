@@ -1,0 +1,346 @@
+// imports
+@import "variables";
+@import "mixins";
+
+// breakpoints (media queries)
+@media (min-width: map-get($breakpoints, mobile)) {
+    // navbar
+    .nav {
+        @include justify-cnt (center, null);
+        @include flex-dir (row, true);
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        @include display-none;
+    }
+
+    #nav__icons  {
+        @include display-none;
+    }
+
+    // hero
+    #hero {
+        background-image: url("../../images/hero.jpg");
+        @include background-img;
+        height: 25.81rem;
+        color: $secondary--color;
+    }
+
+    #hero .container {
+        @include text-align (center, false);
+        background: rgba(0, 0, 0, 0.8);
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 1rem;
+        padding-top: 3%;
+    }
+
+    #hero h4 {
+        @include sm-text (italic, true);
+    }
+
+    #hero a {
+        @include sm-text (italic, false);
+    }
+
+    // card rows
+    #card__row {
+        @include justify-cnt (center, false);
+        padding: 3rem 0.5rem;
+    }
+
+    .card {
+        @include text-align (center, true);
+        width: 50%;
+    }
+    
+    .card a {
+        @include link-style;
+        text-decoration: underline;
+        text-transform: capitalize;
+    }
+
+    .card p {
+        margin-bottom: 1rem;
+    }
+
+    #hidden {
+        @include display-none;
+    }
+
+    #sm-margin {
+        @include img-spacing (1.6rem, true);
+    }
+
+    #md-margin {
+        @include img-spacing (1.6rem, null);
+    }
+
+    // ad 
+    #ad {
+        background-image: url("../../images/pizzaAd.png");
+        @include background-img;
+        height: 33.13rem;
+        color: $secondary--color;
+    }
+
+    .ad__text {
+        @include text-align (center, true);
+        max-width: 55%;
+        height: 100%;
+        position: relative;
+        top: 5rem;
+        left: 7rem;
+    }
+
+    .ad__text h2 {
+        @include lg-text (73, false);
+    }
+
+    .ad__text h1 {
+        @include lg-text (73, null);
+    }
+
+    //gallery 
+    .gallery {
+        @include display-none;
+    }
+
+    // map
+    #map {
+        background-image: url("../../images/map.jpg");
+        @include background-img;
+        height: 30.19rem;
+        margin-top: 1.94rem;
+    }
+
+    #map h1 {
+        @include lg-text (73, false);
+        @include text-align (center, true);
+        background-color: $header--background;
+    }
+
+    // footer
+    footer {
+        @include text-align (center, true);
+        @include flex-dir (row, false);
+        background-color: $footer--background;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .footer__locations {
+        @include justify-cnt (center, false);
+        @include flex-dir (row, true);
+        padding-top: 1rem;
+        gap: 4rem;
+    }
+
+    .location {
+        width: 50%;
+    }
+
+    .underlined {
+        text-decoration: underline;
+    }
+
+    .list__mailing {
+        @include text-align (center, true);
+        border-top: 2px solid $primary--color;
+        margin-top: 3rem;
+    }
+
+    .list__mailing h4 {
+        margin: 1rem 0;
+    }
+
+    input[value="EMAIL ADDRESS"] {
+        @include link-style;
+        background-color: #ebebeb;
+        color: $primary--color;
+        padding: 0.5rem;
+        width: 23.81rem;
+    }
+
+    .list__mailing a {
+        @include link-style;
+        text-decoration: none;
+        color: $secondary--color;
+        background-color: $primary--color;
+        padding: 0.7rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    #hero .container {
+        padding-right: 2rem;
+        padding-top: 4rem;
+    }
+
+    #hidden {
+        @include display-inline-blk;
+    }
+
+    #card__row {
+        gap: 1.7rem;
+    }
+
+    .card {
+        width: 33%;
+    }
+
+    #ad {
+        @include display-none;
+    }
+
+    .gallery {
+        @include display-inline-blk;
+        margin-bottom: 4rem;
+    }
+
+    .row:nth-child(2) {
+        @include flex-dir (row, null);
+    }
+
+    .row {
+        @include flex;
+    }
+
+    #map {
+        @include display-none;
+    }
+
+    .footer__locations {
+        gap: 9rem;
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+// fonts
+.card p {
+    font-size: 1.125rem;
+}
+
+footer h1 {
+    font-size: 2.31rem;
+}
+
+footer h6 {
+    font-size: 1.06rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+}
+// style
+#hidden {
+    @include display-inline-blk;
+}
+
+#nav-menu {
+    @include display-none;
+}
+
+nav {
+    @include display-inline-blk;
+    align-content: center;
+}
+
+.nav a {
+    padding: 0 0.5rem;
+}
+
+li + li::before {
+    content: " | ";
+}
+
+#nav__icons {
+    @include display-inline-blk;
+}
+
+#icons {
+    gap: 0.5rem;
+}
+
+#hero .container {
+    padding-right: 2rem;
+}
+
+.card {
+    width: 26%;
+}
+
+#ad {
+    @include display-none;
+}
+
+.gallery {
+    @include display-inline-blk;
+    margin-bottom: 4rem;
+}
+
+.row:nth-child(2) {
+    @include flex-dir (row, null);
+}
+
+.row {
+    @include flex;
+}
+
+#map {
+    @include display-none;
+}
+
+footer {
+    @include flex-dir (row, null);
+    justify-content: space-evenly;
+    padding-bottom: 0;
+}
+
+.footer__locations {
+    @include flex-dir (row, false);
+    gap: 2rem;
+}
+
+.location {
+    width: auto;
+}
+
+.list__mailing {
+    border-top: none;
+    margin-bottom: 18rem;
+}
+
+.left h4 {
+    @include text-align (center, null);
+}
+
+
+.right {
+    max-width: 24%;
+    margin-top: -2.7rem;
+}
+
+input[value="EMAIL ADDRESS"] {
+    width: 22.81rem;
+}
+}
+
+@media (min-width: map-get($breakpoints, large-devices)) {
+#hero .container {
+    padding-top: 5%;
+}
+
+#card__row {
+    @include justify-cnt (center, true);
+    gap: 3rem;
+}
+.card {
+    width: 27%;
+}
+}
+

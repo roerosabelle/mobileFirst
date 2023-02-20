@@ -1,0 +1,83 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Oswald:wght@300;400&display=swap');
+@import "mixins";
+@import "variables";
+@import "breakpoints";
+
+// all
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: $primary--color;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.flex {
+    @include flex;
+}
+
+.qtr {
+    width: 25%;
+}
+
+// fonts
+h1 {
+    @include h1-style;
+}
+
+h2 {
+    @include h2-style;
+}
+
+h3 {
+    @include h3-style;
+}
+
+h4 {
+    @include h4-style;
+}
+
+h5 {
+    @include h5-style;
+}
+
+h6 {
+    @include h6-style;
+}
+
+p {
+    @include p-style;
+}
+
+// navigation
+label{
+    display:none;
+  }
+  
+nav li {
+    display:inline;
+  }
+  
+  #nav-button {
+    display:none;
+  }
+  
+  nav a {
+    @include nav-style;
+    text-decoration: none;
+    text-transform:uppercase;
+    color: $nav--color;
+    padding:0px 10px;
+  }

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Oswald:wght@300;400&display=swap");
+@media (min-width: 576px) {
+  .nav {
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  nav {
+    display: none;
+  }
+  #nav__icons {
+    display: none;
+  }
+  #hero {
+    background-image: url("../../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25.81rem;
+    color: #ffffff;
+  }
+  #hero .container {
+    text-align: center;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 3%;
+  }
+  #hero h4 {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  #hero a {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 0.75rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  #card__row {
+    justify-content: center;
+    justify-content: space-around;
+    padding: 3rem 0.5rem;
+  }
+  .card {
+    text-align: center;
+    width: 50%;
+  }
+  .card a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.87rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  .card p {
+    margin-bottom: 1rem;
+  }
+  #hidden {
+    display: none;
+  }
+  #sm-margin {
+    margin-bottom: 1.6rem;
+  }
+  #md-margin {
+    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  #ad {
+    background-image: url("../../images/pizzaAd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 33.13rem;
+    color: #ffffff;
+  }
+  .ad__text {
+    text-align: center;
+    max-width: 55%;
+    height: 100%;
+    position: relative;
+    top: 5rem;
+    left: 7rem;
+  }
+  .ad__text h2 {
+    font-size: 4.56rem;
+    font-size: 3.88rem;
+  }
+  .ad__text h1 {
+    font-size: 4.56rem;
+    font-size: 4.06rem;
+  }
+  .gallery {
+    display: none;
+  }
+  #map {
+    background-image: url("../../images/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30.19rem;
+    margin-top: 1.94rem;
+  }
+  #map h1 {
+    font-size: 4.56rem;
+    font-size: 3.88rem;
+    text-align: center;
+    background-color: #d7e4d7;
+  }
+  footer {
+    text-align: center;
+    flex-direction: row;
+    flex-direction: column;
+    background-color: #000000;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .footer__locations {
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 1rem;
+    gap: 4rem;
+  }
+  .location {
+    width: 50%;
+  }
+  .underlined {
+    text-decoration: underline;
+  }
+  .list__mailing {
+    text-align: center;
+    border-top: 2px solid #575757;
+    margin-top: 3rem;
+  }
+  .list__mailing h4 {
+    margin: 1rem 0;
+  }
+  input[value="EMAIL ADDRESS"] {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.87rem;
+    font-weight: 400;
+    background-color: #ebebeb;
+    color: #575757;
+    padding: 0.5rem;
+    width: 23.81rem;
+  }
+  .list__mailing a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.87rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #575757;
+    padding: 0.7rem;
+    margin-left: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #hero .container {
+    padding-right: 2rem;
+    padding-top: 4rem;
+  }
+  #hidden {
+    display: inline-block;
+  }
+  #card__row {
+    gap: 1.7rem;
+  }
+  .card {
+    width: 33%;
+  }
+  #ad {
+    display: none;
+  }
+  .gallery {
+    display: inline-block;
+    margin-bottom: 4rem;
+  }
+  .row:nth-child(2) {
+    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+  .row {
+    display: flex;
+  }
+  #map {
+    display: none;
+  }
+  .footer__locations {
+    gap: 9rem;
+  }
+}
+@media (min-width: 992px) {
+  .card p {
+    font-size: 1.125rem;
+  }
+  footer h1 {
+    font-size: 2.31rem;
+  }
+  footer h6 {
+    font-size: 1.06rem;
+  }
+  footer h5 {
+    font-size: 1.2rem;
+  }
+  #hidden {
+    display: inline-block;
+  }
+  #nav-menu {
+    display: none;
+  }
+  nav {
+    display: inline-block;
+    align-content: center;
+  }
+  .nav a {
+    padding: 0 0.5rem;
+  }
+  li + li::before {
+    content: " | ";
+  }
+  #nav__icons {
+    display: inline-block;
+  }
+  #icons {
+    gap: 0.5rem;
+  }
+  #hero .container {
+    padding-right: 2rem;
+  }
+  .card {
+    width: 26%;
+  }
+  #ad {
+    display: none;
+  }
+  .gallery {
+    display: inline-block;
+    margin-bottom: 4rem;
+  }
+  .row:nth-child(2) {
+    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+  .row {
+    display: flex;
+  }
+  #map {
+    display: none;
+  }
+  footer {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+  }
+  .footer__locations {
+    flex-direction: row;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .location {
+    width: auto;
+  }
+  .list__mailing {
+    border-top: none;
+    margin-bottom: 18rem;
+  }
+  .left h4 {
+    text-align: center;
+    text-align: left;
+  }
+  .right {
+    max-width: 24%;
+    margin-top: -2.7rem;
+  }
+  input[value="EMAIL ADDRESS"] {
+    width: 22.81rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero .container {
+    padding-top: 5%;
+  }
+  #card__row {
+    justify-content: center;
+    gap: 3rem;
+  }
+  .card {
+    width: 27%;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #575757;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.qtr {
+  width: 25%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.56rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+label {
+  display: none;
+}
+
+nav li {
+  display: inline;
+}
+
+#nav-button {
+  display: none;
+}
+
+nav a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  padding: 0px 10px;
+}/*# sourceMappingURL=styles.css.map */
